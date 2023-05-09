@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  position: relative;
+}
+
+.toupeira {
+  background-image: url(imagem/toupeira6.svg);
+  width: 223px;
+  height: 169px;
+}
+.toupeiras {
+  display: grid;
+  position: absolute;
+  grid-template-areas: 
+  "A B C D"
+  "E F G H"
+  "I J K L";
+  margin-top: 200px;
+  margin-left: 100px;
+  gap: 80px;
+}
+
+.toupeiras div:nth-child(1){
+  grid-area: A;
+  animation: toupeira 700ms reverse;
+}
+.toupeiras div:nth-child(2){
+  grid-area: B;
+}
+.toupeiras img:nth-child(3){
+  grid-area: C;
+  animation: toupeira 700ms reverse forwards 2s;
+}
+.toupeiras div:nth-child(4){
+  grid-area: D;
+}
+.toupeiras div:nth-child(5){
+  grid-area: E;
+  animation: toupeira 700ms reverse forwards 2s;
+}
+.toupeiras div:nth-child(6){
+  grid-area: F;
+}
+.toupeiras div:nth-child(7){
+  grid-area: G;
+}
+.toupeiras div:nth-child(8){
+  grid-area: H;
+  animation: toupeira 700ms reverse forwards 6s;
+}
+.toupeiras div:nth-child(9){
+grid-area: I;
+}
+.toupeiras div:nth-child(10){
+grid-area: J;
+}
+.toupeiras div:nth-child(11){
+grid-area: K;
+}
+.toupeiras div:nth-child(12){
+grid-area: L;
+}
+
+@keyframes toupeira {
+  0% {
+    background-image: url(imagem/toupeira1.svg);
+    transform: translate(0px);
+  }
+  20% {
+    background-image: url(imagem/toupeira2.svg);
+  }
+  40% {
+    background-image: url(imagem/toupeira3.svg);
+  }
+  60% {
+    background-image: url(imagem/toupeira4.svg);
+  }
+  80% {
+    background-image: url(imagem/toupeira5.svg);
+  }
+  100% {
+    background-image: url(imagem/toupeira6.svg);
+  }
+}
+
